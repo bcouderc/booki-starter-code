@@ -1,4 +1,4 @@
-/****** General ***********/
+/*********** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -52,8 +52,65 @@ body {
 .neutral-star {
     color: var(--main-bg-color)
 }
+/*********** Mise en page du header ***********/
+.logo{
+    width: 61.09px;
+    height: 19px;
+    top: 30px;
+    left: 50px;
+}
 
-/****** Hebergements And Populaires ***********/
+ul, li{
+    list-style-type: none;
+}
+
+.search-bar{
+    width: 377px;
+    height: 49px;
+
+    background-color: #ffffff;
+    
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F2F2F2;
+    border-radius: 15px;   
+    
+    font-style: normal;
+    font-size: 18px;
+    font-weight: bold;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    text-align: center;
+}
+
+.search-bar-loc{
+    width: 50px;
+    height: 49px;
+    
+    background-color: #f2f2f2;
+    
+    border-radius: 15px 0px 0px 15px;
+}
+.search-bar-text{
+    width: 195px;
+}
+
+.search-bar-bouton{
+    width: 132px;
+    padding: 14px ;
+
+    border-radius: 0px 15px 15px 0px;
+    
+    color: #ffffff;
+    background-color: #0065fc;
+}
+
+  
+/*********** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -66,12 +123,12 @@ body {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/*********** Hebergements ***********/
 .hebergements {
     width: 65%;
 }
 
-/****** Populaires ***********/
+/*********** Populaires ***********/
 .populaires {
     width: 32%;
 }
@@ -121,7 +178,7 @@ body {
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
+/*********** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {

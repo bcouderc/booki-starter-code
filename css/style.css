@@ -72,6 +72,7 @@ ul, li{
 
 .direction_row{
     display: flex;
+    flex-direction: row;
     align-items: end;
     justify-content: center;
 }

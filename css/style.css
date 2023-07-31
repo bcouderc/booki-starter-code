@@ -64,22 +64,42 @@ body {
     height: 19px;
     top: 30px;
     left: 50px;
+    display: block;
 }
 
-ul, li{
+li, ul{
     list-style-type: none;
 }
 
+ul{
+    text-align: right;
+}
+
+li{
+    display: inline; /* aligne le contenu sur une ligne*/
+    padding: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header-container{
+    max-width: 1440px;
+    height: 80px;
+    display: inline-block;
+    border-style: dotted; /* Ligne a supprimer une fois l'alignement OK*/
+}
 .direction_row{
     display: flex;
     flex-direction: row;
-    align-items: end;
-    justify-content: center;
+    align-items: center;
 }
 /*********** Menu ***********/
 .menu_navigation{
-    width: 244px;
-    height: 35px;
+    position: relative;
+    width: 100%;
+    height: 79px;
 }
 
 /*********** Bouton rechercher ***********/

@@ -64,7 +64,8 @@ body {
     height: 19px;
     top: 30px;
     left: 50px;
-    display: block;
+    display: flex;
+    justify-content: flex-start;
 }
 
 li, ul{
@@ -77,32 +78,45 @@ ul{
 
 li{
     display: inline; /* aligne le contenu sur une ligne*/
-    padding: 15px;
 }
 
 a{
     text-decoration: none;
 }
-
-.header-container{
+/**/
+header{
+    position: relative;
+    width: 100%;
     max-width: 1440px;
-    height: 80px;
-    display: inline-block;
-    border-style: dotted; /* Ligne a supprimer une fois l'alignement OK*/
+    display: inline;
 }
+.header-conteneur{
+    max-width: 1440px;
+    width: 100%;
+    height: 19px;
+    border-style: solid;
+    display: flex;
+}
+
 .direction_row{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-between;
 }
+
 /*********** Menu ***********/
 .menu_navigation{
     position: relative;
+    top: auto;
     width: 100%;
-    height: 79px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /*********** Bouton rechercher ***********/
+.search{
+    display: inline-block;
+}
 .search-bar{
     width: 377px;
     height: 49px;
@@ -118,7 +132,7 @@ a{
     font-size: 18px;
     font-weight: bold;
     
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
 
@@ -133,6 +147,9 @@ a{
     background-color: #f2f2f2;
     
     border-radius: 15px 0px 0px 15px;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 .search-bar-text{
     width: 195px;

@@ -17,74 +17,64 @@
 </head>
 
 <body>
-    <div class=" main-container header-container menu_navigation direction-row">
-        <header>
-            <!--*********EN-TÊTE*********-->
-            <span>
+    <header>
+        <div class="logo menu_navigation">            <!--*********EN-TÊTE*********-->
+            <div>  <!--supprimer la span et utiliser une div-->
                 <img class="logo" src="./images/logo/Booki.png" alt="logo booki">
-            </span>
-            <span>
-                <nav>
-                        <ul>
-                            <li>
-                                <a href="#">Hébergement</a>
-                            </li>
-                            <li>
-                                <a href="#">Activités</a>
-                            </li>
-                        </ul>
-                </nav>
-            </span> 
-        </header>
-        <main>
-            <!-- Test d'importation d'icône Font Awesome-->
-            <!-- <i class="fa-brands fa-bots fa-2xl" style="color: #800000;"></i> -->
-            <div class="search-bar">
-                <span class="search-bar-loc">
-                    <i class="fa-solid fa-location-dot" style="color: black;"></i>
-                </span>
-                <span class="search-bar-text">
-                    Marseille, France
-                </span>
-                <span class="search-bar-bouton">
-                    Rechercher
-                </span>
             </div>
+            <div class="menu_navigation">
+                <nav>
+                    <ul>
+                        <li><a href="#">Hébergement</a></li>
+                        <li><a href="#">Activités</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Test d'importation d'icône Font Awesome-->
+        <!-- <i class="fa-brands fa-bots fa-2xl" style="color: #800000;"></i> -->
+        <section class="search">
+            <div class="search-bar">
+                <div class="search-bar-loc">
+                    <i class="fa-solid fa-location-dot" style="color: black;"></i>
+                </div>
+            </div>
+        </section>
+        <section>
             <div>
                 <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
                 <h2>En plein centre-ville ou en pleine nature</h2>
             </div>
-
-
-
-
-            <div class="hebergements-and-populaires">
-                <section class="hebergements">
-
-                </section>
-                <section class="populaires">
-                    <div class="populaires-title">
-                        <h2 class="section-title">Les plus populaires</h2>
-                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
-                    </div>
-                    <div class="populaires-cards">
-                        <article class="card">
-                            <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
-                            <div class="card-content">
-                                <div class="card-txt">
-                                    <h3 class="card-title">Hôtel Le soleil du matin</h3>
-                                    <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
-                                </div>
-                                <div class="card-rating">
-                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                    <span class="sr-only">Note de 4 sur 5</span>
-                                </div>
+        </section>
+        <div class="hebergements-and-populaires">
+            <section class="hebergements">
+                <p> Ici doivent apparaitre les cards</p>
+            </section>
+            <section class="populaires">
+                <div class="populaires-title">
+                    <h2 class="section-title">Les plus populaires</h2>
+                    <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                </div>
+                <div class="populaires-cards">
+                    <article class="card">
+                    <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                    <div class="card-content">
+                        <div class="card-txt">
+                            <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                            <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
+                        </div>
+                            <div class="card-rating">
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                <span class="sr-only">Note de 4 sur 5</span>
                             </div>
-                        </article>
+                    </div>
+                    </article>
                         <article class="card">
                             <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
@@ -120,9 +110,9 @@
                             </div>
                         </article>
                     </div>
-                </section>
-            </div>
-        </main>
+            </section>
+        </div>
+    </main>
         <footer></footer>
     </div>
 </body>

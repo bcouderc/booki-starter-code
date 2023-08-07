@@ -17,71 +17,98 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <div>
-                    <img class="logo-booki" src="./images/logo/Booki.png" alt="logo booki">
-                    <li class="menu button"><a href="#">Hébergements</a></li>
-                    <li class="menu button"><a href="#">Activités</a></li>
-                </div>
-            </ul>
-        </nav>
+        <div class="align">
+            <div>
+                <img class="logo-booki" src="./images/logo/Booki.png" alt="logo booki"/>
+            </div>
+            <div>  
+                <nav class="navigation">
+                    <ul>
+                        <li class="menu"><a href="#">Hébergements</a></li>
+                        <li class="menu"><a href="#">Activités</a></li>
+                    </ul>
+                </nav>
+            </div>  
+        </div>
     </header>
     <main>
-        <section>
-            <article>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou pleine nature</p>
-            </article>
-        </section>
-
-        <section> <!-- Filtre -->
-            <div class="">
-                <ul>
-                    <li>Filtre</li>
-                        <div class="bouton-filtre">
-                            <i class="fa-solid fa-money-bill-wave"></i>
-                            <li>Economique</li>
-                        </div>
-                        <div class="bouton-filtre">
-                            <i class="fa-solid fa-person"></i>
-                            <li>Familial</li>
-                        </div>
-                        <div class="bouton-filtre">
-                            <i class="fa-solid fa-heart"></i>
-                            <li>Romantique</li>
-                        </div>
-                        <div class="bouton-filtre">
-                            <i class="fa-solid fa-fire"></i>
-                            <li>Nos pépites</li>
-                        </div>
-                    </ul>
-            </div>
-            <div>
-                <ul><i class="fa-solid fa-info ico-info"></i>
-                    <li>Plus de 500 logements sont disponibles dans cette ville</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <div class="bouton-rechercher">
-                <div><!-- localisation-->
-
+        <div class="direction-column info-group">
+            <!-- ********** TITLE BAR **********-->
+            <section>
+                <article>
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou pleine nature</p>
+                </article>
+            </section>
+            <!-- ********** SEARCH BAR **********-->
+            <section>
+                <div class="bouton-rechercher align">
+                    <div class="align-geo"><!-- localisation-->
+                        <i class="fa-solid fa-location-dot" style="color: black;"></i>
+                    </div>
+                    <div><!-- zone de recherche-->
+                        <b>Marseille, France</b>
+                    </div>
+                    <div><!-- bouton action-->
+                        <input class="favorite rechercher" type="button" value="Rechercher">
+                    </div>
                 </div>
-                <div><!-- zone de recherche-->
-                    <input type="text" name="recherche" required minlength="4" maxlength="20" size="20">
-                </div>
-                <div><!-- bouton action-->
-                    <input type="button" name="Rechercher" size="20">
-                </div>
+            </section>
 
-            </div>
-        </section>
+            <!-- ********** FILTER BAR **********-->
+            <section> 
+                <div class="direction-row"> <!-- modifier la class test pour l'appliquer à cette div-->
+                    <div>
+                        <p><b>Filtres</b></p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <div class="bouton-filtre">
+                                    </a><i class="fa-solid fa-money-bill-wave filtre"></i>
+                                    <b>Economique</b>
+                                </div>
+                            </li>
+                            <li>    
+                                <div class="bouton-filtre">
+                                    <i class="fa-solid fa-person filtre"></i>
+                                    <b>Familial</b>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bouton-filtre">
+                                    <i class="fa-solid fa-heart filtre"></i>
+                                    <b>Romantique</b>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bouton-filtre">
+                                    <i class="fa-solid fa-fire filtre"></i>
+                                    <b>Nos pépites</b>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- ********** INFO BAR **********-->
+            <section>
+                <div class="direction-row">
+                    <div class="align-info">
+                        <i class="fa-solid fa-info ico-info"></i>
+                    </div>
+                    <div>
+                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
 <!-- Début du code fourni-->
         <div class="hebergements-and-populaires">
             <section class="hebergements">
-                <p> Ici doivent apparaitre les cards</p>
+                <p><b>Hébergements à Marseille</b></p>
             </section>
             <section class="populaires">
                 <div class="populaires-title">

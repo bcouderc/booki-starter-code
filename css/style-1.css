@@ -66,10 +66,40 @@ body {
     box-sizing: border-box;
 }
 
+/*---------------------------------------------------------------*/
+/*------------------------- VIGNETTES DEBUT ---------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
 /*********** Hebergements ***********/
 .hebergements {
     width: 65%;
 }
+
+.hebergements-cards img {
+    width: 240px;
+    height: 110px;
+    align-self: stretch;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.activités {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.activités img {
+    width: 290px;
+    height: 439px;
+    align-self: stretch;
+    border-radius: 20px 20px 0 0;
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------------- VIGNETTES FIN ----------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
 
 /*********** Populaires ***********/
 .populaires {
@@ -157,11 +187,11 @@ body {
 @media (max-width: 767.98px) {
     /* ... */
 }
-/*-----------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------*/
-/************************** Alignement horizontal ou vertical */
+/*---------------------------------------------------------------*/
+/*--------------------------- HEADER ----------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/********** ALIGNEMENT HORIZONTAL ET/OU VERTICAL **********/
 .direction-row{
     display: flex;
     flex-direction: row;
@@ -172,7 +202,7 @@ body {
     flex-direction: column;
 }
 
-/************************** MISE EN FORME DES BALISES */
+/********** MISE EN FORME DES BALISES **********/
 ul, li{
     list-style-type: none;
 }
@@ -191,7 +221,7 @@ a{
     text-decoration: none;
 }
 
-/************************** MISE EN FORME DU HEADER */
+/********** MISE EN FORME DU HEADER **********/
 .logo-booki{
     display: flex;
     justify-content: flex-start;
@@ -208,10 +238,6 @@ a{
     flex-direction: row;
     justify-content: space-between;
 }
-header{
-    max-width: 1440px;
-    width: 100%;
-}
 
 .menu a{
     color: #000;
@@ -224,18 +250,16 @@ header{
     padding-top: 10px;
 }
 
-/************************** CADRE GAL - GROUPE INFO */
+/********** TITLE BAR **********/
 .info-group{ /* cadre général contenant tout le bloc*/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    align-self: stretch;
 }
-/************************** BOUTON RECHERCHE */
+/********** SEARCH BAR **********/
 
 .bouton-rechercher{ /* cadre global */
-    display: flex;
     width: 350px;
     height: 49px;
     border-radius: 15px;
@@ -267,7 +291,7 @@ header{
     font-weight: bold;
 }
 
-/************************** ZONE FILTRE */
+/********** FILTER BAR **********/
 .bouton-filtre{
     display: inline;
     height: 50px;
@@ -285,7 +309,7 @@ header{
     background: #DEEBFF;    
 }
 
-/************************** ZONE INFO */
+/********** INFO BAR **********/
 .ico-info{
     display: flex;
     justify-content: center;
@@ -300,3 +324,24 @@ header{
     align-items: center;
     margin-right: 10px;
 }
+
+/*---------------------------------------------------------------*/
+/*--------------------------- CARDS -----------------------------*/
+/*------------------- HEBERGEMENTS MARSEILLES -------------------*/
+/*---------------------------------------------------------------*/
+/********** CONTENEUR CARDS **********/
+.hebergements-alignement{
+    justify-content: space-between;
+    height: 250px;
+}
+
+.hebergements-cards {
+    align-items: center;
+    align-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    height: 192px;
+    width: 250px;    
+    margin-top: 25px;
+    }

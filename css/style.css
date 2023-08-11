@@ -1,20 +1,21 @@
-/*********** General ***********/
-* {
+*{
     font-family: 'Raleway', sans-serif;
 }
 
-:root {
+:root{
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
+    --filter-bg-color: #DEEBFF;    
 }
+
 
 .fa-solid {
     color: var(--main-color);
 }
 
 body {
-    justify-content: center;
+    margin: auto;
+    max-width: 1440px;
 }
 
 .main-container {
@@ -52,162 +53,6 @@ body {
     color: var(--main-bg-color)
 }
 
-
-
-
-
-
-/*********** Mise en page du header ***********/
-li, ul{
-    list-style-type: none;
-}
-
-ul{
-    text-align: right;
-}
-
-li{
-    display: inline; /* aligne le contenu sur une ligne*/
-}
-
-a{
-    text-decoration: none;
-}
-/******************************************************************/
-html, body, div{ /*permet de remettre à zéro les marges*/
-    margin: 0px;
-    padding: 0px;
-}
-
-header{
-    max-width: 1400px;
-    width: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*****************************************************************
-header{
-    max-width: 1440px;
-    width: 100%;
-    border-style: solid;
-    display: inline-flexbox;
-}
-header img,
-header .header-text-content{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-header img{
-    object-fit: contain;
-}
-header .header-text-content{
-    display: flex;
-    justify-content:center ;
-    align-items: center;
-}
-
-/******************************************************************/
-.direction_row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-/*********** Menu ***********/
-.logo{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 61.09px;
-    height: 19px;
-    padding: 30px 50px;
-}
-.menu_navigation{
-    display: flex;
-    justify-content: flex-end;
-}
-
-/*********** Bouton rechercher ***********/
-.search{
-    display: inline-block;
-}
-.search-bar{
-    width: 377px;
-    height: 49px;
-
-    background-color: #ffffff;
-    
-    border-style: solid;
-    border-width: 1px;
-    border-color: #F2F2F2;
-    border-radius: 15px;   
-    
-    font-style: normal;
-    font-size: 18px;
-    font-weight: bold;
-    
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-
-    text-decoration: none;
-    text-align: center;
-}
-
-.search-bar-loc{
-    width: 50px;
-    height: 49px;
-    
-    background-color: #f2f2f2;
-    
-    border-radius: 15px 0px 0px 15px;
-    display: flex;
-    flex-wrap: wrap;
-
-}
-.search-bar-text{
-    width: 195px;
-}
-
-.search-bar-bouton{
-    width: 132px;
-    padding: 14px ;
-
-    border-radius: 0px 15px 15px 0px;
-    
-    color: #ffffff;
-    background-color: #0065fc;
-}
-/**********************/
-
-
-  
 /*********** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -221,10 +66,40 @@ header .header-text-content{
     box-sizing: border-box;
 }
 
+/*---------------------------------------------------------------*/
+/*------------------------- VIGNETTES DEBUT ---------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
 /*********** Hebergements ***********/
 .hebergements {
     width: 65%;
 }
+
+.hebergements-cards img {
+    width: 240px;
+    height: 110px;
+    align-self: stretch;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.activités {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.activités img {
+    width: 290px;
+    height: 439px;
+    align-self: stretch;
+    border-radius: 20px 20px 0 0;
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------------- VIGNETTES FIN ----------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
 
 /*********** Populaires ***********/
 .populaires {
@@ -271,9 +146,6 @@ header .header-text-content{
     margin-bottom: 5px;
 }
 
-
-
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /*********** Media queries ***********/
@@ -314,4 +186,179 @@ header .header-text-content{
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+}
+/*---------------------------------------------------------------*/
+/*--------------------------- HEADER - FOOTER -------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/********** ALIGNEMENT HORIZONTAL ET/OU VERTICAL **********/
+.direction-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.direction-column{
+    display: flex;
+    flex-direction: column;
+}
+
+/********** MISE EN FORME DES BALISES **********/
+ul, li{
+    list-style-type: none;
+}
+
+ul{
+    display: flex;
+    align-items: flex-start;
+}
+
+li{
+    display: inline;
+    padding-left: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    padding: 5px;
+    margin: 0;
+}
+
+/********** MISE EN FORME DU HEADER **********/
+.logo-booki{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    width: 61.09px;
+    height: 19px;
+}
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+}
+.align{ /* Permet d'aligner les éléments sur une ligne */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu a{
+    color: #000;
+}
+
+.menu a:hover{
+    color: #0065FC;
+    text-align: center; 
+    border-top: 2px solid #0065FC; /* permet d'afficher la bordure supérieur + épaisseur + couleur*/
+    padding-top: 10px;
+}
+
+/********** TITLE BAR **********/
+.info-group{ /* cadre général contenant tout le bloc*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+/********** SEARCH BAR **********/
+
+.bouton-rechercher{ /* cadre global */
+    width: 350px;
+    height: 49px;
+    border-radius: 15px;
+    border: 1px solid #F2F2F2;
+    background: #FFF;
+    align-items: center;
+}
+
+.align-geo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 49px;
+    background-color: #f2f2f2;
+
+    border-radius: 15px 0px 0px 15px;
+}
+
+.rechercher{ 
+    height: 49px;
+    padding: 15px 16px;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid #0065FC;
+    background: #0065FC;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+/********** FILTER BAR **********/
+.bouton-filtre{
+    display: inline;
+    height: 50px;
+    padding: 10px 19px;
+    border-radius: 25px;
+    border: 2px solid #D9D9D9;
+    align-items: center;
+}
+
+.filtre{
+    padding-right: 10px;
+}
+
+.bouton-filtre:hover{ /*affiche un fond bleu au survol de la div*/
+    background: #DEEBFF;    
+}
+
+/********** INFO BAR **********/
+.ico-info{
+    display: flex;
+    justify-content: center;
+    border-radius: 50%; /* permet d'obtenir un rond */
+    border: 1px solid #D9D9D9;
+    padding: 5px 12px 7px 12px;
+}
+
+.align-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+/*---------------------------------------------------------------*/
+/*--------------------------- CARDS -----------------------------*/
+/*------------------- HEBERGEMENTS MARSEILLES -------------------*/
+/*---------------------------------------------------------------*/
+/********** CONTENEUR CARDS **********/
+.hebergements-alignement{
+    justify-content: space-between;
+    height: 250px;
+}
+
+.hebergements-cards {
+    align-items: center;
+    align-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    height: 192px;
+    width: 250px;    
+    margin-top: 25px;
+    }
+/*---------------------------------------------------------------*/
+/*--------------------------- FOOTER ----------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.pied-de-page{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    background-color: #F2F2F2;
 }

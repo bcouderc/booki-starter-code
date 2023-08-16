@@ -44,8 +44,11 @@
                     <div class="align-geo"><!-- localisation-->
                         <i class="fa-solid fa-location-dot" style="color: black;"></i>
                     </div>
-                    <div><!-- zone de recherche / voir s'il ne vaut mieux pas mettre une INPUT à la place-->
-                        <p><b>Marseille, France</b></p>
+                    <div><!-- zone de recherche -->
+                        <form action="get">
+                            <input type="text" name="recherche" class="recherche" placeholder="Marseille, France" size="15">
+                        </form>
+                        
                     </div>
                     <div><!-- bouton action-->
                         <input class="favorite rechercher" type="button" value="Rechercher">
@@ -327,7 +330,7 @@
                             </div>
                         </div>
             </div>
-        </div>
+        </div> 
     </main>
     <footer>
         <div class="pied-de-page">

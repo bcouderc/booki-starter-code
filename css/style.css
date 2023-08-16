@@ -272,6 +272,14 @@ p{
     background: #FFF;
     align-items: center;
 }
+/* zone de texte pour la recherche*/
+input{
+    border: 0;
+    font-size: 16px;
+}
+.recherche{ /* correspond à la hauteur de la zone de texte de recherche*/
+    height: 45px;
+}
 
 .align-geo{
     display: flex;

@@ -66,41 +66,6 @@ body {
     box-sizing: border-box;
 }
 
-/*---------------------------------------------------------------*/
-/*------------------------- VIGNETTES DEBUT ---------------------*/
-/*---------------------------------------------------------------*/
-/*---------------------------------------------------------------*/
-/*********** Hebergements ***********/
-.hebergements {
-    width: 65%;
-}
-
-.hebergements-cards img {
-    width: 240px;
-    height: 110px;
-    align-self: stretch;
-    border-radius: 20px 20px 0 0;
-
-}
-
-.activités {
-    max-width: 1440px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.activités img {
-    width: 290px;
-    height: 439px;
-    align-self: stretch;
-    border-radius: 20px 20px 0 0;
-}
-
-/*---------------------------------------------------------------*/
-/*-------------------------- VIGNETTES FIN ----------------------*/
-/*---------------------------------------------------------------*/
-/*---------------------------------------------------------------*/
-
 /*********** Populaires ***********/
 .populaires {
     width: 32%;
@@ -146,50 +111,8 @@ body {
     margin-bottom: 5px;
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
-/*********** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
-
-    .hebergements {
-        width: 100%;
-    }
-
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .populaires-cards .card {
-        width: 30%;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
-}
-
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
-}
 /*---------------------------------------------------------------*/
 /*--------------------------- HEADER - FOOTER -------------------*/
-/*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /********** ALIGNEMENT HORIZONTAL ET/OU VERTICAL **********/
 .direction-row{
@@ -237,10 +160,11 @@ p{
 .navigation{
     display: flex;
     justify-content: flex-end;
+    margin-left: 70px;
+    margin: 10px;
 }
 .align{ /* Permet d'aligner les éléments sur une ligne */
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -252,7 +176,7 @@ p{
     color: #0065FC;
     text-align: center; 
     border-top: 2px solid #0065FC; /* permet d'afficher la bordure supérieur + épaisseur + couleur*/
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 /********** TITLE BAR **********/
@@ -359,6 +283,34 @@ input{
     width: 250px;    
     margin-top: 25px;
     }
+
+/*********** CARDS ***********/
+/*********** Hebergements ***********/
+.hebergements {
+    width: 65%;
+}
+
+.hebergements-cards img {
+    width: 240px;
+    height: 110px;
+    align-self: stretch;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.activités {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.activités img {
+    width: 290px;
+    height: 439px;
+    align-self: stretch;
+    border-radius: 20px 20px 0 0;
+}
+
 /*---------------------------------------------------------------*/
 /*--------------------------- FOOTER ----------------------------*/
 /*---------------------------------------------------------------*/
@@ -371,4 +323,50 @@ input{
     margin-top: 40px;
     padding-left: 20px;
     background-color: #F2F2F2;
+}
+
+
+
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/*********** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards .card {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ... */
 }

@@ -43,18 +43,19 @@
             <!-- ********** SEARCH BAR **********-->
             <article>
                 <div class="bouton-rechercher align">
-                    <div class="align-geo"><!-- localisation-->
-                        <i class="fa-solid fa-location-dot" style="color: black;"></i>
-                    </div>
-                    <div><!-- zone de recherche -->
-                        <form action="get">
+                    <form method="post" action="#" class="direction-row">
+                        <div class="align-geo"><!-- localisation-->
+                            <i class="fa-solid fa-location-dot" style="color: black;"></i>
+                        </div>
+                        <div><!-- zone de recherche -->
                             <input type="text" name="recherche" class="recherche" placeholder="Marseille, France" size="15">
-                        </form>
-                    </div>
-                    <div><!-- bouton action-->
-                        <input class="favorite rechercher" type="button" value="Rechercher">
-                    </div>
+                        </div>
+                        <div><!-- bouton rechercher -->
+                            <input class="favorite rechercher" type="submit" value="Rechercher"> 
+                        </div>
+                    </form>
                 </div>
+
             </article>
             <!-- ********** FILTER BAR **********-->
             <article> 
@@ -62,33 +63,23 @@
                     <div>
                         <h3>Filtres</h3>
                     </div>
-                    <div>
-                        <ul>
-                            <li>
-                                <div class="bouton-filtre">
-                                    </a><i class="fa-solid fa-money-bill-wave filtre"></i>
-                                    <b>Economique</b>
-                                </div>
-                            </li>
-                            <li>    
-                                <div class="bouton-filtre">
-                                    <i class="fa-solid fa-person filtre"></i>
-                                    <b>Familial</b>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="bouton-filtre">
-                                    <i class="fa-solid fa-heart filtre"></i>
-                                    <b>Romantique</b>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="bouton-filtre">
-                                    <i class="fa-solid fa-fire filtre"></i>
-                                    <b>Nos pépites</b>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="filtre">
+                        <div class="bouton-filtre">
+                            </a><i class="fa-solid fa-money-bill-wave filtre"></i>
+                            <b>Economique</b>
+                        </div>
+                        <div class="bouton-filtre">
+                            <i class="fa-solid fa-person filtre"></i>
+                            <b>Familial</b>
+                        </div>
+                        <div class="bouton-filtre">
+                            <i class="fa-solid fa-heart filtre"></i>
+                            <b>Romantique</b>
+                        </div>
+                        <div class="bouton-filtre">
+                            <i class="fa-solid fa-fire filtre"></i>
+                            <b>Nos pépites</b>
+                        </div>
                     </div>
                 </div>
             </article>

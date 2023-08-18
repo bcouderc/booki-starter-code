@@ -277,7 +277,7 @@ input{
 /*********** CARDS ***********/
 /*********** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    width: 100%;
 }
 
 .hebergements-cards img {
@@ -299,6 +299,17 @@ input{
     height: 439px;
     align-self: stretch;
     border-radius: 20px 20px 0 0;
+}
+
+.activités-card {
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.activités-card-title {
+    font-size: 16px;
+    padding-left: 20px;
 }
 
 /*---------------------------------------------------------------*/

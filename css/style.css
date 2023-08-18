@@ -320,24 +320,18 @@ input{
 /*---------------------------------------------------------------*/
 
 .pied-de-page{
-    /*
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    */
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
     background-color: #F2F2F2;
 }
 
-.align-pdp{
+.box-pdp{
     display: flex;
-    align-items: left;
-    
+    align-items: self-start;
+    width: 100%;
+    padding-left:20px;
 }
-
-
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

@@ -339,6 +339,26 @@ input{
 /*********** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    body{
+        margin: 0 50px 0 50px;
+    }
+
+    .logo-booki{
+        margin: 30px 0 30px 0;
+    }
+
+    
+    .menu a{
+        color: #000;
+    } 
+
+    .menu a:hover{
+        color: #0065FC;
+        text-align: center; 
+        border: 2px solid #0065FC;
+        padding-top: 5px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -373,5 +393,29 @@ input{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    /* Header */
+    .align{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .logo-booki{
+        display: flex;
+        margin: 30px;
+        /*centrage de la div*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu a{
+        color: #000;
+        padding-top: 150px;
+        text-align: center;
+    }    
+    .menu a:hover{
+        color: #0065FC;
+        text-align: center;
+        border-bottom: 2px solid #0065FC;
+    }
+ 
 }

@@ -115,7 +115,7 @@ body {
 /*--------------------------- HEADER - FOOTER -------------------*/
 /*---------------------------------------------------------------*/
 /********** ALIGNEMENT HORIZONTAL ET/OU VERTICAL **********/
-.direction-row{
+.direction-row {
     display: flex;
     flex-direction: row;
 }
@@ -218,12 +218,8 @@ input{
     align-items: center;
     gap: 10px;
 }
-.filter-bar{
-    display: flex;
-    flex-direction: row;
-}
-.filtre{
 
+.filtre{
     display: flex;
     align-items: center;
     gap: 15px;
@@ -301,9 +297,9 @@ input{
 }
 
 .activités img {
-    width: 297px;
+    width: 100%;
     height: 380px;
-    align-self: stretch;
+    justify-content: space-between;
     border-radius: 20px 20px 0 0;
 }
 
@@ -362,7 +358,8 @@ input{
         border: 2px solid #0065FC;
         padding-top: 5px;
     }
-    .filter-bar{
+
+    .orientation{
         display: flex;
         flex-direction: column;
     }
@@ -415,6 +412,10 @@ input{
         flex-direction: column;
     }
     
+    .orientation-2{
+        display: flex;
+        flex-direction: column;
+    }
     .logo-booki{
         display: flex;
         margin: 30px;

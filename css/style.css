@@ -52,6 +52,19 @@ body {
 .neutral-star {
     color: var(--main-bg-color)
 }
+
+
+/*********** Alignement du header ***********/
+.direction-row{
+    display: flex;
+    flex-direction: row;
+}
+.menu-navigation{
+    width: 244px;
+    height: 35px;
+    gap: 68px;
+}
+
 /*********** Mise en page du header ***********/
 .logo{
     width: 61.09px;
@@ -64,6 +77,7 @@ ul, li{
     list-style-type: none;
 }
 
+/*********** Bouton rechercher ***********/
 .search-bar{
     width: 377px;
     height: 49px;
@@ -108,7 +122,7 @@ ul, li{
     color: #ffffff;
     background-color: #0065fc;
 }
-
+/**********************/
   
 /*********** Hebergements And Populaires ***********/
 .hebergements-and-populaires {

@@ -218,7 +218,10 @@ input{
     align-items: center;
     gap: 10px;
 }
-
+.filter-bar{
+    display: flex;
+    flex-direction: row;
+}
 .filtre{
 
     display: flex;
@@ -254,6 +257,8 @@ input{
 /*------------------- HEBERGEMENTS MARSEILLES -------------------*/
 /*---------------------------------------------------------------*/
 /********** CONTENEUR CARDS **********/
+
+/* Section Hébergement */
 .hebergements {
     width: 65%;
 }
@@ -290,15 +295,14 @@ input{
     padding-top: 30px;
 }
 
-.activités {
-    max-width: 1440px;
-    display: flex;
-    justify-content: space-between;
+/* Section Activités */
+.activités {    
+    gap: 30px;
 }
 
 .activités img {
-    width: 290px;
-    height: 439px;
+    width: 297px;
+    height: 380px;
     align-self: stretch;
     border-radius: 20px 20px 0 0;
 }
@@ -358,6 +362,10 @@ input{
         border: 2px solid #0065FC;
         padding-top: 5px;
     }
+    .filter-bar{
+        display: flex;
+        flex-direction: column;
+    }
 
     .hebergements-and-populaires {
         flex-direction: column;
@@ -388,6 +396,14 @@ input{
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    /* Section Activité */
+    .activités img {
+        max-width: 100%;
+        height: 200px;
+        align-self: stretch;
+        border-radius: 20px 20px 0 0;
     }
 }
 

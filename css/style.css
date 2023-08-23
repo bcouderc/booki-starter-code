@@ -304,9 +304,8 @@ input{
 }
 
 .activités img {
-    width: 100%;
+    width: 320px;
     height: 380px;
-    align-self: stretch;
     border-radius: 20px 20px 0 0;
 }
 

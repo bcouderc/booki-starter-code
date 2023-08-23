@@ -277,7 +277,7 @@ input{
     }
 
 .hebergements-cards img {
-    width: 100%;
+    max-width: auto;
     height: 125px;
     align-self: stretch;
     border-radius: 20px 20px 0 0;
@@ -292,7 +292,12 @@ input{
 }
 
 /* Section Activités */
-.activités {    
+.activités {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30px;    
     gap: 30px;
 }
 

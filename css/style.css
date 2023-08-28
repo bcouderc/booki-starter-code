@@ -184,6 +184,10 @@ input{
 .recherche{ /* correspond  à la hauteur de la zone de texte de recherche*/
     height: 45px;
 }
+ 
+.loupe{
+    display: none;
+}
 
 .align-geo{
     display: flex;
@@ -472,6 +476,37 @@ input{
         padding: 4px 19px;
         align-items: center;
         justify-content: center;
+    }
+
+    .bouton-rechercher{ /* cadre global */
+        width: 335px;
+        height: 49px;
+        border-radius: 15px;
+        border: 1px solid #F2F2F2;
+        background: #FFF;
+        align-items: space-between;
+    }
+    .recherche2{
+        display: none;
+    }
+    .loupe{
+        display: flex;
+        justify-content: flex-end;
+        display:contents;
+    }
+    .align-loupe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 49px;
+        background-color: #0065FC;
+    
+        border-radius: 0 15px 15px 0;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    .recherche{ /* correspond  à la hauteur de la zone de texte de recherche*/
+        height: 45px;
     }
   
 }

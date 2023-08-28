@@ -131,7 +131,11 @@ a{
 }
 
 /********** MISE EN FORME DU HEADER **********/
-.logo-booki{
+.align{ /* Permet d'aligner les éléments sur une ligne */
+    display: flex;
+    justify-content: space-between;
+
+}.logo-booki{
     display: flex;
     justify-content: flex-start;
     margin-top: 10px;
@@ -141,11 +145,7 @@ a{
 .navigation{
     display: flex;
     justify-content: flex-end;
-    margin-left: 70px;
-}
-.align{ /* Permet d'aligner les éléments sur une ligne */
-    display: flex;
-    justify-content: space-between;
+    gap: 70px;
 }
 
 .menu a{
@@ -360,8 +360,9 @@ input{
 
     .menu a:hover{
         color: #0065FC;
-        text-align: center; 
-        border: 2px solid #0065FC;
+        text-align: center;
+        border-top: none;
+        border-bottom: 1px solid #0065FC;
         padding-top: 5px;
     }
     .filter-bar{
@@ -411,10 +412,14 @@ input{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    body{
+        margin: 0 0 0 0;
+    }
     /* Header */
-    .align{
+    .orientation-2{
         display: flex;
         flex-direction: column;
+        gap: 15px;
     }
     
     .logo-booki{
@@ -424,10 +429,22 @@ input{
         margin-left: auto;
         margin-right: auto;
     }
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+    }
+    .test{
+        width: 50%;
+        justify-content: center;
+        text-align: center;
 
+    }
+    .test a:hover{
+        border-bottom: 2px solid #0065FC;
+ 
+    }
     .menu a{
         color: #000;
-        padding-top: 150px;
         text-align: center;
     }    
     .menu a:hover{
@@ -435,5 +452,19 @@ input{
         text-align: center;
         border-bottom: 2px solid #0065FC;
     }
- 
+
+    .flex-bouton{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: auto;
+    }
+    .bouton-filtre{
+        display: flex;
+        width: 35%;
+        height: 35px;
+        padding: 4px 19px;
+        align-items: center;
+        justify-content: center;
+    }
+  
 }

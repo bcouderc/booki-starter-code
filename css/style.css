@@ -473,7 +473,7 @@ input{
     }
     .bouton-filtre{
         display: flex;
-        width: 35%;
+        width: 30%;
         height: 35px;
         padding: 4px 19px;
         align-items: center;

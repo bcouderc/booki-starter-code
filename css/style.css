@@ -529,5 +529,11 @@ input{
             height: 192px;
             border-radius: 20px 20px 0 0;
         }
+    /* Inversion des div hébergements et les + populaires */
+        .reverse{
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 30px;
+        }
   
 }

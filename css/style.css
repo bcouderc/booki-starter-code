@@ -521,5 +521,13 @@ input{
         margin-top: 30px;
         padding-bottom: 30px;
         }
+        .populaires-cards .card {
+            width: 100%;
+        }
+        .activités img {
+            width: 100%;
+            height: 192px;
+            border-radius: 20px 20px 0 0;
+        }
   
 }

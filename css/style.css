@@ -274,14 +274,20 @@ input{
     margin-bottom: 30px;
     gap: 30px;
 }
-
+.heberge-card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    gap: 30px;
+    align-self: stretch; 
+}
 .hebergements-cards {
-    align-items: center;
     align-content: space-between;
     border-radius: 20px;
     height: 192px;
-    width: 100%;    
+    width: 30%;
     margin-top: 30px;
+    padding-bottom: 30px;
     }
 
 .hebergements-cards img {
@@ -367,7 +373,7 @@ input{
         color: #0065FC;
         text-align: center;
         border-top: none;
-        border-bottom: 1px solid #0065FC;
+        border-top: 2px solid #0065FC;
         padding-top: 5px;
     }
     .filter-bar{
@@ -438,10 +444,17 @@ input{
         /*centrage de la div*/
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 30px;
     }
     .navigation{
         display: flex;
         justify-content: space-between;
+        border-bottom: 1px solid #F2F2F2;
+    }
+
+    .navigation a:hover{
+        width: 50%;
+        border-bottom: 2px solid red;
     }
     .test{
         margin-left: auto;
@@ -450,20 +463,9 @@ input{
         text-align: center;
 
     }
-    .test a:hover{
-        border-bottom: 2px solid #0065FC;
- 
-    }
-    .menu a{
-        color: #000;
-        text-align: center;
-    }    
-    .menu a:hover{
-        color: #0065FC;
-        text-align: center;
-        border-bottom: 2px solid #0065FC;
-    }
+    
 
+/*********** FILTER BAR ***********/
     .flex-bouton{
         display: flex;
         flex-wrap: wrap;
@@ -477,7 +479,7 @@ input{
         align-items: center;
         justify-content: center;
     }
-
+/*********** SEARCH BAR ***********/
     .bouton-rechercher{ /* cadre global */
         width: 335px;
         height: 49px;
@@ -502,11 +504,22 @@ input{
         height: 49px;
         background-color: #0065FC;
     
-        border-radius: 0 15px 15px 0;
+        border-radius: 15px 15px 15px 15px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
     .recherche{ /* correspond  à la hauteur de la zone de texte de recherche*/
         height: 45px;
+        width: 245px;
+        margin: auto;
     }
+/**************** Section Hébergement ****************/
+    .hebergements-cards {
+        align-content: space-between;
+        border-radius: 20px;
+        height: 192px;
+        width: 100%;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        }
   
 }

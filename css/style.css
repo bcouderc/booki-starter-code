@@ -59,7 +59,7 @@ body {
     justify-content: space-between;
 }
 
-.hebergements-and-populaires section {
+.hebergements-and-populaires{ /* Original : hebergements-and-populaires section { "supression de la section */
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -69,6 +69,7 @@ body {
 /*********** Populaires ***********/
 .populaires {
     width: 32%;
+    margin-left: 40px;
 }
 
 .populaires-title {
@@ -428,8 +429,7 @@ input{
     }
 
     .mef{
-        margin-left: 20px;
-        margin-right: 20px;
+        margin: 0 20px 0 20px;
     }
     /* Header */
     .orientation-2{
@@ -437,7 +437,6 @@ input{
         flex-direction: column;
         gap: 15px;
     }
-    
     .logo-booki{
         display: flex;
         margin: 30px;
@@ -451,18 +450,23 @@ input{
         justify-content: space-between;
         border-bottom: 1px solid #F2F2F2;
     }
-
     .navigation a:hover{
-        width: 50%;
-        border-bottom: 2px solid red;
+        border-top: transparent;
     }
-    .test{
+    .menu{
+        width: 100%;
+    }
+    .border-nav:hover{
+        width: 40% ;
+        border-bottom: solid 1px #0065FC;
+    }
+    .navigation-mef{
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
         text-align: center;
-
     }
+
     
 
 /*********** FILTER BAR ***********/
@@ -473,7 +477,7 @@ input{
     }
     .bouton-filtre{
         display: flex;
-        width: 30%;
+        width: 35%;
         height: 35px;
         padding: 4px 19px;
         align-items: center;
@@ -535,5 +539,27 @@ input{
             flex-direction: column-reverse;
             gap: 30px;
         }
-  
+
+        .fond-héb section {
+            background-color: transparent;
+        }
+
+        .populaires{
+            background-color: #F2F2F2;
+            margin: 0;
+            border-radius: 0;
+        }
+
+        .hebergements{
+            background-color: transparent;
+        }
+
+    /*Section pied de page*/
+        .pied-de-page{
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            background-color: #F2F2F2;
+        }
+
 }

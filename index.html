@@ -22,12 +22,12 @@
             <div>
                 <img class="logo-booki" src="./images/logo/Booki.png" alt="logo booki"/>
             </div>
-            <div>  
+            <div class="">  
                 <nav class="direction-row menu navigation">
-                    <div class="test">
+                    <div class="navigation-mef border-nav">
                         <p><a href="#hebergements">Hébergements</a></p>
                     </div>
-                    <div class="test">
+                    <div class="navigation-mef border-nav">
                         <p><a href="#activites-a">Activités</a></p>
                     </div>
                 </nav>
@@ -94,10 +94,10 @@
                     </div>
                 </div>
         </div>
-        <div class="hebergements-and-populaires reverse">
+        <div class="reverse direction-row">
 <!-- ************************************************************************************************************************************ -->
             <!-- *************** Section Hébergement *************** -->
-            <section class="hebergements">
+            <section class="hebergements hebergements-and-populaires direction-column">
                 <h2 id="hebergements" class="section-title">Hébergements à Marseille</h2>
             <!-- Première rangée de vignettes -->
                 <div class="direction-row orientation-2">
@@ -221,8 +221,9 @@
                 <h3 class="texte-afficherplus">Afficher plus</h3>
             </section>
 <!-- ************************************************************************************************************************************ -->
-        <!-- LES PLUS POPULAIRES  / code fourni -->
-            <section class="populaires">
+        <!-- LES PLUS POPULAIRES -->
+            <section class="populaires hebergements-and-populaires">
+            <div class="fond-populaires">
                 <div class="populaires-title">
                     <h2 class="section-title">Les plus populaires</h2>
                     <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
@@ -280,9 +281,8 @@
                         </div>
                     </article>
                 </div>
-                </div>
+            </div>
             </section>
-            
         </div>
 <!-- ************************************************************************************************************************************ -->
     <!-- Section Activités -->
@@ -324,6 +324,8 @@
             </div>
         </div>
     </main>
+<!-- ************************************************************************************************************************************ -->
+    <!-- Section pied de page -->
     <footer>
         <div class="pied-de-page orientation-2">
             <div class="box-pdp">

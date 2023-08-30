@@ -223,23 +223,24 @@ input{
     align-items: center;
     gap: 10px;
 }
+.bouton-filtre:hover{ /*affiche un fond bleu au survol de la div*/
+    background: #DEEBFF;    
+}
+.filtre{
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
 .filter-bar{
     display: flex;
     flex-direction: row;
 }
-.filtre{
 
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
 
 .filtre-texte{
     margin-right: 15px;
 }
-.bouton-filtre:hover{ /*affiche un fond bleu au survol de la div*/
-    background: #DEEBFF;    
-}
+
 
 /********** INFO BAR **********/
 .ico-info{
@@ -360,16 +361,12 @@ input{
     body{
         margin: 0 50px 0 50px;
     }
-
     .logo-booki{
         margin: 30px 0 30px 0;
     }
-
-    
     .menu a{
         color: #000;
     } 
-
     .menu a:hover{
         color: #0065FC;
         text-align: center;
@@ -381,38 +378,35 @@ input{
         display: flex;
         flex-direction: column;
     }
-
     .hebergements-and-populaires {
         flex-direction: column;
     }
-
     .hebergements {
-        width: 100%;
+        width: auto;
     }
-
+    .heberge-populaires{
+        display: flex;
+        flex-wrap: wrap;
+    }
     .populaires {
-        width: 100%;
+        width: auto;
         margin-top: 50px;
+        margin-left: 0;
     }
-
     .populaires-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-
     .populaires-cards .card {
         width: 30%;
     }
-
     .populaires-cards .card-title {
         font-size: 14px;
     }
-
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-
     /* Section Activité */
     .activités img {
         max-width: 100%;
@@ -425,16 +419,22 @@ input{
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     body{
+        min-width: 320px;
         margin: 0 0 0 0;
     }
 
     .mef{
         margin: 0 20px 0 20px;
     }
+
+    h2{
+        font-size:22px;
+    }
     /* Header */
     .orientation-2{
         display: flex;
         flex-direction: column;
+        padding-top: 20px;
         gap: 15px;
     }
     .logo-booki{
@@ -450,6 +450,7 @@ input{
         justify-content: space-between;
         align-content: stretch;
         border-bottom: 1px solid #F2F2F2;
+        gap:0
     }
     .navigation a:hover{
         border-top: transparent;
@@ -460,6 +461,8 @@ input{
     }
     .border-nav{
         width: 100%;
+    }
+    .border-nav:hover{
         border-bottom: solid 1px #0065FC;
     }
     .navigation-mef{
@@ -487,21 +490,17 @@ input{
     }
 /*********** SEARCH BAR ***********/
     .bouton-rechercher{ /* cadre global */
-        width: 335px;
+        width: auto;
         height: 49px;
         border-radius: 15px;
         border: 1px solid #F2F2F2;
         background: #FFF;
-        align-items: space-between;
+        align-items:stretch;
     }
     .recherche2{
         display: none;
     }
-    .loupe{
-        display: flex;
-        justify-content: flex-end;
-        display:contents;
-    }
+
     .align-loupe{
         display: flex;
         justify-content: center;
@@ -513,11 +512,17 @@ input{
         border-radius: 15px 15px 15px 15px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
+    .align-recherche{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
     .recherche{ /* correspond  à la hauteur de la zone de texte de recherche*/
         height: 45px;
         width: 245px;
         margin: auto;
     }
+
 /**************** Section Hébergement ****************/
     .hebergements-cards {
         align-content: space-between;
@@ -555,7 +560,15 @@ input{
         .hebergements{
             background-color: transparent;
         }
-
+        
+        .heberge-card{
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: auto;
+            gap: 30px;
+            align-self: stretch; 
+            max-width: 400px;
+        }
     /*Section pied de page*/
         .pied-de-page{
             display: flex;

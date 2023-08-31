@@ -377,10 +377,6 @@ input{
         border-top: 2px solid #0065FC;
         padding-top: 5px;
     }
-    .orientation{
-        display: flex;
-        flex-direction: column;
-    }
     .filter-bar{
         display: flex;
         flex-direction: column;

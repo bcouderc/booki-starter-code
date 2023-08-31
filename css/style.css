@@ -235,7 +235,10 @@ input{
     display: flex;
     flex-direction: row;
 }
-
+.filter-bar{
+    display: flex;
+    flex-direction: row;
+}
 
 .filtre-texte{
     margin-right: 15px;
@@ -373,6 +376,10 @@ input{
         border-top: none;
         border-top: 2px solid #0065FC;
         padding-top: 5px;
+    }
+    .orientation{
+        display: flex;
+        flex-direction: column;
     }
     .filter-bar{
         display: flex;

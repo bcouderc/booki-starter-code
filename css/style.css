@@ -17,7 +17,7 @@
 }
 
 body {
-    margin: 0 50px 0 50px;;
+    margin: auto;
     max-width: 1440px;
 }
 
@@ -40,6 +40,7 @@ body {
 
 a{
     text-decoration: none;
+    color: #000;
 }
 
 /*--------------------------------------*/
@@ -211,6 +212,8 @@ a{
 
 /* Section : Activités */
 .activités {
+    display: flex;
+    justify-content: center;
     max-width: 1440px;
     margin-left: 30px;
     margin-right: 30px;
@@ -643,4 +646,11 @@ input{
         padding: 30px;
         background-color: #F2F2F2;
     }
+}
+
+@media (max-width: 1440px)
+{
+  body{
+    margin: 0 50px 0 50px;
+}  
 }

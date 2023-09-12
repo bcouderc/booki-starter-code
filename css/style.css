@@ -221,7 +221,7 @@ a{
 }
 
 .activités img {
-    width: 297px;
+    width: 330px;
     height: 380px;
     border-radius: 20px 20px 0 0;
 }
@@ -371,14 +371,25 @@ input{
     display: flex;
     align-items: self-start;
     width: 100%;
-    padding-left:20px;
-    line-height: 2px; /*définit la hauteur d'une ligne*/
+    padding-left:30px;
+    padding-top: 20px;
+    line-height: 1px; /*définit la hauteur d'une ligne*/
 }
 
 /********************************************************************/
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /*== Media queries                                                  */
 /********************************************************************/
+/* Ajustement pour l'affichage à 1440px */
+@media (max-width: 1440px)
+{
+body{
+    margin: 0 30px 0 30px;
+}
+  .activités img{
+    width: 315px;
+  }
+}
 
 /********************************************************************/
 /********* Medium devices (tablets, less/equal than 1024px) *********/
@@ -387,7 +398,7 @@ input{
 @media (max-width: 1024px) {
     
     body{
-        margin: 0 50px 0 50px;
+        margin: 0 30px 0 30px;
     }
     /*--------------------------------------*/
     /* == Header                            */
@@ -470,7 +481,7 @@ input{
 @media (max-width: 767.98px) {
     body{
         min-width: 320px;
-        margin: 0 0 0 0;
+        margin: 0;
     }
 
     .mef{
@@ -544,6 +555,10 @@ input{
         justify-content: center;
     }
 
+    .filtre{
+        gap: 0;
+    }
+
     /*--------------------------------------*/
     /* == Search bar                        */
     /*--------------------------------------*/
@@ -580,7 +595,7 @@ input{
     }
     .recherche{ /* correspond  à la hauteur de la zone de texte de recherche*/
         height: 45px;
-        width: 245px;
+        max-width: 245px;
         margin: auto;
     }
     /*--------------------------------------*/
@@ -591,13 +606,12 @@ input{
     align-content: space-between;
     border-radius: 20px;
     height: 192px;
-    width: 100%;
     margin-top: 30px;
     padding-bottom: 30px;
     }
 
     .populaires-cards .card {
-        min-width: 335px;
+        min-width: 250px;
     }
 
     .activités img {
@@ -606,6 +620,14 @@ input{
         border-radius: 20px 20px 0 0;
     }
 
+    .card{
+        min-width: 250px;
+    }
+
+    .heberge-card{
+        display: flex;
+        flex-direction: column;
+    }
     /* Inversion des div hébergements et les + populaires */
     .reverse{
         display: flex;
@@ -648,9 +670,4 @@ input{
     }
 }
 
-@media (max-width: 1440px)
-{
-  body{
-    margin: 0 50px 0 50px;
-}  
-}
+
